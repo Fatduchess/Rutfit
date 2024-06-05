@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #48e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  overflow: hidden; /* Efecto de máquina de escribir */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.8s steps(27, end), blink-caret .5s step-end infinite;
+  display: inline-block; /* Cambiado a inline-block */
+  animation-fill-mode: forwards;
+  border-right: .15em solid white; /* Movido para que esté junto con otras propiedades relacionadas */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Cambiado a 100% */
+  }
+}
+
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.form-section, .result-section {
+  background-color: #444;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-section {
+  margin-right: 30px;
+}
+
+input[type="number"], button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+input[type="number"] {
+  background-color: #555;
+}
+
+button {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.result-text {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
